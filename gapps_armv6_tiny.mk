@@ -15,6 +15,10 @@ PRODUCT_COPY_FILES += \
 	vendor/google/armv6/app/ChromeBookmarksSyncAdapter.apk:system/app/ChromeBookmarksSyncAdapter.apk
 
 PRODUCT_COPY_FILES += \
+	vendor/google/armv6/lib/libvideochat_jni.so:system/lib/libgtalk_jni.so \
+	vendor/google/armv6/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so
+
+PRODUCT_COPY_FILES += \
 	vendor/google/armv6/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
 	vendor/google/armv6/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml
 
@@ -33,6 +37,9 @@ $(shell rm -f $(OUT)/system/app/SetupWizard.ap)
 $(shell rm -f $(OUT)/system/app/NetworkLocation.apk)
 $(shell rm -f $(OUT)/system/app/Talk.apk)
 $(shell rm -f $(OUT)/system/app/ChromeBookmarksSyncAdapter.apk)
+
+$(shell rm -f $(OUT)/system/lib/libgtalk_jni.so)
+$(shell rm -f $(OUT)/system/lib/libvideochat_stabilize.so)
 
 $(shell rm -f $(OUT)/system/etc/permissions/com.google.android.maps.xml)
 $(shell rm -f $(OUT)/system/etc/permissions/com.google.android.media.effects.xml)
