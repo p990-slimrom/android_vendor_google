@@ -12,6 +12,7 @@ PRODUCT_COPY_FILES += \
 	vendor/google/system/app/GoogleLoginService.apk:system/app/GoogleLoginService.apk \
 	vendor/google/system/app/GooglePartnerSetup.apk:system/app/GooglePartnerSetup.apk \
 	vendor/google/system/app/GoogleServicesFramework.apk:system/app/GoogleServicesFramework.apk \
+    vendor/google/system/app/LatinIME.apk:system/app/LatinIME.apk \
 	vendor/google/system/app/MediaUploader.apk:system/app/MediaUploader.apk \
 	vendor/google/system/app/NetworkLocation.apk:system/app/NetworkLocation.apk \
 	vendor/google/system/app/OneTimeInitializer.apk:system/app/OneTimeInitializer.apk \
@@ -30,6 +31,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
 	vendor/google/system/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
+    vendor/google/system/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so \
 	vendor/google/system/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
 	vendor/google/system/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so
 
@@ -44,6 +46,7 @@ $(shell rm -f $(OUT)/system/app/GoogleFeedback.apk)
 $(shell rm -f $(OUT)/system/app/GoogleLoginService.apk)
 $(shell rm -f $(OUT)/system/app/GooglePartnerSetup.apk)
 $(shell rm -f $(OUT)/system/app/GoogleServicesFramework.apk)
+$(shell rm -f $(OUT)/system/app/LatinIME.apk)
 $(shell rm -f $(OUT)/system/app/MediaUploader.apk)
 $(shell rm -f $(OUT)/system/app/NetworkLocation.apk)
 $(shell rm -f $(OUT)/system/app/OneTimeInitializer.apk)
@@ -59,6 +62,7 @@ $(shell rm -f $(OUT)/system/framework/com.google.android.maps.jar)
 $(shell rm -f $(OUT)/system/framework/system/framework/com.google.android.media.effects.jar)
 
 $(shell rm -f $(OUT)/system/lib/libgtalk_jni.so)
+$(shell rm -f $(OUT)/system/lib/libjni_unbundled_latinimegoogle.so)
 $(shell rm -f $(OUT)/system/lib/libspeexwrapper.so)
 $(shell rm -f $(OUT)/system/lib/libvideochat_stabilize.so)
 
