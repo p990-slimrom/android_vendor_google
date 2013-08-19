@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/google/system/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
-    vendor/google/system/lib/libpatts_engine_jni_api.so:system/lib/libpatts_engine_jni_api.so \
+    vendor/google/system/lib/libjni_t13n_shared_engine.so:system/lib/libjni_t13n_shared_engine.so \
     vendor/google/system/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so \
     vendor/google/system/lib/libpatts_engine_jni_api.so:system/lib/libpatts_engine_jni_api.so \
     vendor/google/system/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
@@ -71,7 +71,7 @@ $(shell rm -f $(OUT)/system/framework/system/framework/com.google.android.media.
 $(shell rm -f $(OUT)/system/framework/com.google.widevine.software.drm.jar)
 
 $(shell rm -f $(OUT)/system/lib/libgtalk_jni.so)
-$(shell rm -f $(OUT)/system/lib/libpatts_engine_jni_api.so)
+$(shell rm -f $(OUT)/system/lib/libjni_t13n_shared_engine.so)
 $(shell rm -f $(OUT)/system/lib/libjni_unbundled_latinimegoogle.so)
 $(shell rm -f $(OUT)/system/lib/libpatts_engine_jni_api.so)
 $(shell rm -f $(OUT)/system/lib/libspeexwrapper.so)
