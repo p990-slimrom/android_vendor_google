@@ -18,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/app/NetworkLocation.apk:system/app/NetworkLocation.apk \
     vendor/google/system/app/OneTimeInitializer.apk:system/app/OneTimeInitializer.apk \
     vendor/google/system/app/Phonesky.apk:system/app/Phonesky.apk \
-    vendor/google/system/app/SetupWizard.apk:system/app/SetupWizard.apk \
     vendor/google/system/app/Talk.apk:system/app/Talk.apk
 
 PRODUCT_COPY_FILES += \
@@ -40,6 +39,9 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
     vendor/google/system/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so \
     vendor/google/system/lib/libwebrtc_audio_coding.so:system/lib/libwebrtc_audio_coding.so
+
+#temporary hack: ensure the SetupWizard gets deleted:
+$(shell rm -f $(OUT)/system/app/SetupWizard.apk)
 
 else
 # uninstall
