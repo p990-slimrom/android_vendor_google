@@ -41,6 +41,21 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so \
     vendor/google/system/lib/libwebrtc_audio_coding.so:system/lib/libwebrtc_audio_coding.so
 
+# faceunlock
+ifeq ($(GAPPS_INCLUDE_FACELOCK),true)
+PRODUCT_COPY_FILES += \
+    vendor/google/system/addon.d/71-gapps-faceunlock.sh:system/addon.d/71-gapps-faceunlock.sh \
+    vendor/google/system/lib/libfacelock_jni.so:system/lib/libfacelock_jni.so \
+    vendor/google/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin \
+    vendor/google/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin \
+    vendor/google/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin \
+    vendor/google/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin \
+    vendor/google/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin \
+    vendor/google/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin \
+    vendor/google/system/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin:system/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin \
+    vendor/google/system/app/FaceLock.apk:system/app/FaceLock.apk
+endif
+
 else
 # uninstall
 $(shell rm -f $(OUT)/system/app/ChromeBookmarksSyncAdapter.apk)
@@ -78,4 +93,15 @@ $(shell rm -f $(OUT)/system/lib/libspeexwrapper.so)
 $(shell rm -f $(OUT)/system/lib/libvideochat_stabilize.so)
 $(shell rm -f $(OUT)/system/lib/libwebrtc_audio_coding.so)
 
+# faceunlock
+$(shell rm -f $(OUT)/system/addon.d/71-gapps-faceunlock.sh)
+$(shell rm -f $(OUT)/system/lib/libfacelock_jni.so)
+$(shell rm -f $(OUT)/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin)
+$(shell rm -f $(OUT)/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin)
+$(shell rm -f $(OUT)/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin)
+$(shell rm -f $(OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin)
+$(shell rm -f $(OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin)
+$(shell rm -f $(OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin)
+$(shell rm -f $(OUT)/system/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin)
+$(shell rm -f $(OUT)/system/app/FaceLock.apk)
 endif
