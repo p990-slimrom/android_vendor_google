@@ -16,7 +16,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/app/LatinIME.apk:system/app/LatinIME.apk \
     vendor/google/system/app/MediaUploader.apk:system/app/MediaUploader.apk \
     vendor/google/system/app/NetworkLocation.apk:system/app/NetworkLocation.apk \
-    vendor/google/system/app/OneTimeInitializer.apk:system/app/OneTimeInitializer.apk \
     vendor/google/system/app/Phonesky.apk:system/app/Phonesky.apk \
     vendor/google/system/app/SetupWizard.apk:system/app/SetupWizard.apk \
     vendor/google/system/app/Talk.apk:system/app/Talk.apk
@@ -71,7 +70,6 @@ $(shell rm -f $(OUT)/system/app/GoogleTTS.apk)
 $(shell rm -f $(OUT)/system/app/LatinIME.apk)
 $(shell rm -f $(OUT)/system/app/MediaUploader.apk)
 $(shell rm -f $(OUT)/system/app/NetworkLocation.apk)
-$(shell rm -f $(OUT)/system/app/OneTimeInitializer.apk)
 $(shell rm -f $(OUT)/system/app/Phonesky.apk)
 $(shell rm -f $(OUT)/system/app/SetupWizard.apk)
 $(shell rm -f $(OUT)/system/app/Talk.apk)
