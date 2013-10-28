@@ -9,6 +9,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
     vendor/google/system/app/GoogleFeedback.apk:system/app/GoogleFeedback.apk \
     vendor/google/system/app/GoogleLoginService.apk:system/app/GoogleLoginService.apk \
+    vendor/google/system/app/GoogleMaps.apk:system/app/GoogleMaps.apk \
     vendor/google/system/app/GoogleOneTimeInitializer.apk:system/app/GoogleOneTimeInitializer.apk \
     vendor/google/system/app/GooglePartnerSetup.apk:system/app/GooglePartnerSetup.apk \
     vendor/google/system/app/GoogleServicesFramework.apk:system/app/GoogleServicesFramework.apk \
@@ -50,6 +51,7 @@ $(shell rm -f $(OUT)/system/app/GoogleCalendarSyncAdapter.apk)
 $(shell rm -f $(OUT)/system/app/GoogleContactsSyncAdapter.apk)
 $(shell rm -f $(OUT)/system/app/GoogleFeedback.apk)
 $(shell rm -f $(OUT)/system/app/GoogleLoginService.apk)
+$(shell rm -f $(OUT)/system/app/GoogleMaps.apk)
 $(shell rm -f $(OUT)/system/app/GoogleOneTimeInitializer.apk)
 $(shell rm -f $(OUT)/system/app/GooglePartnerSetup.apk)
 $(shell rm -f $(OUT)/system/app/GoogleServicesFramework.apk)
