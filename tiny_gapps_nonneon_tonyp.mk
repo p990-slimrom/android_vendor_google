@@ -9,6 +9,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
     vendor/google/system/app/GoogleFeedback.apk:system/app/GoogleFeedback.apk \
     vendor/google/system/app/GoogleLoginService.apk:system/app/GoogleLoginService.apk \
+    vendor/google/system/app/GoogleMaps.apk:system/app/GoogleMaps.apk \
     vendor/google/system/app/GoogleOneTimeInitializer.apk:system/app/GoogleOneTimeInitializer.apk \
     vendor/google/system/app/GooglePartnerSetup.apk:system/app/GooglePartnerSetup.apk \
     vendor/google/system/app/GoogleServicesFramework.apk:system/app/GoogleServicesFramework.apk \
@@ -17,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/app/MediaUploader.apk:system/app/MediaUploader.apk \
     vendor/google/system/app/NetworkLocation.apk:system/app/NetworkLocation.apk \
     vendor/google/system/app/Phonesky.apk:system/app/Phonesky.apk \
-    vendor/google/system/app/SetupWizard.apk:system/app/SetupWizard.apk \
     vendor/google/system/app/Talk.apk:system/app/Talk.apk
 
 PRODUCT_COPY_FILES += \
@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/google/system/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
     vendor/google/system/lib/libjni_t13n_shared_engine.so:system/lib/libjni_t13n_shared_engine.so \
-    vendor/google/system/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so \
+    vendor/google/system/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
     vendor/google/system/lib/libpatts_engine_jni_api.so:system/lib/libpatts_engine_jni_api.so \
     vendor/google/system/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
     vendor/google/system/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so \
@@ -55,6 +55,9 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/app/FaceLock.apk:system/app/FaceLock.apk
 endif
 
+#temporary hack: ensure the SetupWizard gets deleted:
+$(shell rm -f $(OUT)/system/app/SetupWizard.apk)
+
 else
 # uninstall
 $(shell rm -f $(OUT)/system/app/ChromeBookmarksSyncAdapter.apk)
@@ -63,6 +66,7 @@ $(shell rm -f $(OUT)/system/app/GoogleCalendarSyncAdapter.apk)
 $(shell rm -f $(OUT)/system/app/GoogleContactsSyncAdapter.apk)
 $(shell rm -f $(OUT)/system/app/GoogleFeedback.apk)
 $(shell rm -f $(OUT)/system/app/GoogleLoginService.apk)
+$(shell rm -f $(OUT)/system/app/GoogleMaps.apk)
 $(shell rm -f $(OUT)/system/app/GoogleOneTimeInitializer.apk)
 $(shell rm -f $(OUT)/system/app/GooglePartnerSetup.apk)
 $(shell rm -f $(OUT)/system/app/GoogleServicesFramework.apk)
@@ -85,7 +89,7 @@ $(shell rm -f $(OUT)/system/framework/com.google.widevine.software.drm.jar)
 
 $(shell rm -f $(OUT)/system/lib/libgtalk_jni.so)
 $(shell rm -f $(OUT)/system/lib/libjni_t13n_shared_engine.so)
-$(shell rm -f $(OUT)/system/lib/libjni_unbundled_latinimegoogle.so)
+$(shell rm -f $(OUT)/system/lib/libjni_latinimegoogle.so)
 $(shell rm -f $(OUT)/system/lib/libpatts_engine_jni_api.so)
 $(shell rm -f $(OUT)/system/lib/libspeexwrapper.so)
 $(shell rm -f $(OUT)/system/lib/libvideochat_stabilize.so)
