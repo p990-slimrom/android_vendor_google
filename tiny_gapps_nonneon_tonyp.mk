@@ -8,7 +8,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/app/GoogleCalendarSyncAdapter.apk:system/app/GoogleCalendarSyncAdapter.apk \
     vendor/google/system/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
     vendor/google/system/priv-app/GmsCore.apk:system/priv-app/GmsCore.apk \
-    vendor/google/system/priv-app/GoogleDialer.apk:system/priv-app/GoogleDialer.apk \
+    vendor/google/system/priv-app/GoogleDialer.apk:system/priv-app/Dialer.apk \
     vendor/google/system/priv-app/GoogleFeedback.apk:system/priv-app/GoogleFeedback.apk \
     vendor/google/system/priv-app/GoogleLoginService.apk:system/priv-app/GoogleLoginService.apk \
     vendor/google/system/priv-app/GoogleMaps.apk:system/priv-app/GoogleMaps.apk \
@@ -16,7 +16,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/priv-app/GooglePartnerSetup.apk:system/priv-app/GooglePartnerSetup.apk \
     vendor/google/system/priv-app/GoogleServicesFramework.apk:system/priv-app/GoogleServicesFramework.apk \
     vendor/google/system/priv-app/GoogleTTS.apk:system/priv-app/GoogleTTS.apk \
-    vendor/google/system/priv-app/GoogleLatinIme.apk:system/priv-app/LatinIME.apk \
+    vendor/google/system/priv-app/GoogleLatinIme.apk:system/app/LatinIME.apk \
     vendor/google/system/app/MediaUploader.apk:system/app/MediaUploader.apk \
     vendor/google/system/priv-app/Phonesky.apk:system/priv-app/Phonesky.apk \
     vendor/google/system/priv-app/SetupWizard.apk:system/priv-app/SetupWizard.apk
