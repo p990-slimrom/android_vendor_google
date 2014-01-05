@@ -8,7 +8,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/app/GoogleCalendarSyncAdapter.apk:system/app/GoogleCalendarSyncAdapter.apk \
     vendor/google/system/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
     vendor/google/system/priv-app/GmsCore.apk:system/priv-app/GmsCore.apk \
-    vendor/google/system/priv-app/GoogleDialer.apk:system/priv-app/Dialer.apk \
     vendor/google/system/priv-app/GoogleFeedback.apk:system/priv-app/GoogleFeedback.apk \
     vendor/google/system/priv-app/GoogleLoginService.apk:system/priv-app/GoogleLoginService.apk \
     vendor/google/system/priv-app/GoogleMaps.apk:system/priv-app/GoogleMaps.apk \
@@ -16,7 +15,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/priv-app/GooglePartnerSetup.apk:system/priv-app/GooglePartnerSetup.apk \
     vendor/google/system/priv-app/GoogleServicesFramework.apk:system/priv-app/GoogleServicesFramework.apk \
     vendor/google/system/priv-app/GoogleTTS.apk:system/priv-app/GoogleTTS.apk \
-    vendor/google/system/priv-app/GoogleLatinIme.apk:system/app/LatinIME.apk \
     vendor/google/system/app/MediaUploader.apk:system/app/MediaUploader.apk \
     vendor/google/system/priv-app/Phonesky.apk:system/priv-app/Phonesky.apk \
     vendor/google/system/priv-app/SetupWizard.apk:system/priv-app/SetupWizard.apk
@@ -36,9 +34,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/google/system/lib/libAppDataSearch.so:system/lib/libAppDataSearch.so \
     vendor/google/system/lib/libgames_rtmp_jni.so:system/lib/libgames_rtmp_jni.so \
-    vendor/google/system/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so \
     vendor/google/system/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so
 
+#ensure removal of the deleted apps
+$(shell rm -f $(OUT)/system/priv-app/GoogleDialer.apk)
+$(shell rm -f $(OUT)/system/priv-app/GoogleLatinIme.apk)
+$(shell rm -f $(OUT)/system/lib/libjni_unbundled_latinimegoogle.so)
+    
 else
 # uninstall
 $(shell rm -f $(OUT)/system/app/ChromeBookmarksSyncAdapter.apk)
@@ -46,7 +48,6 @@ $(shell rm -f $(OUT)/system/priv-app/GoogleBackupTransport.apk)
 $(shell rm -f $(OUT)/system/app/GoogleCalendarSyncAdapter.apk)
 $(shell rm -f $(OUT)/system/app/GoogleContactsSyncAdapter.apk)
 $(shell rm -f $(OUT)/system/priv-app/GmsCore.apk)
-$(shell rm -f $(OUT)/system/priv-app/GoogleDialer.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleFeedback.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleLoginService.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleMaps.apk)
@@ -54,7 +55,6 @@ $(shell rm -f $(OUT)/system/priv-app/GoogleOneTimeInitializer.apk)
 $(shell rm -f $(OUT)/system/priv-app/GooglePartnerSetup.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleServicesFramework.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleTTS.apk)
-$(shell rm -f $(OUT)/system/priv-app/LatinIME.apk)
 $(shell rm -f $(OUT)/system/app/MediaUploader.apk)
 $(shell rm -f $(OUT)/system/priv-app/Phonesky.apk)
 $(shell rm -f $(OUT)/system/priv-app/SetupWizard.apk)
@@ -71,7 +71,6 @@ $(shell rm -f $(OUT)/system/framework/com.google.widevine.software.drm.jar)
 
 $(shell rm -f $(OUT)/system/lib/libAppDataSearch.so)
 $(shell rm -f $(OUT)/system/lib/libgames_rtmp_jni.so)
-$(shell rm -f $(OUT)/system/lib/libjni_unbundled_latinimegoogle.so)
 $(shell rm -f $(OUT)/system/lib/libspeexwrapper.so)
 
 endif
