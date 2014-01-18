@@ -15,7 +15,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/priv-app/GooglePartnerSetup.apk:system/priv-app/GooglePartnerSetup.apk \
     vendor/google/system/priv-app/GoogleServicesFramework.apk:system/priv-app/GoogleServicesFramework.apk \
     vendor/google/system/priv-app/GoogleTTS.apk:system/priv-app/GoogleTTS.apk \
-    vendor/google/system/app/MediaUploader.apk:system/app/MediaUploader.apk \
     vendor/google/system/priv-app/Phonesky.apk:system/priv-app/Phonesky.apk \
     vendor/google/system/priv-app/SetupWizard.apk:system/priv-app/SetupWizard.apk
 
@@ -55,7 +54,6 @@ $(shell rm -f $(OUT)/system/priv-app/GoogleOneTimeInitializer.apk)
 $(shell rm -f $(OUT)/system/priv-app/GooglePartnerSetup.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleServicesFramework.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleTTS.apk)
-$(shell rm -f $(OUT)/system/app/MediaUploader.apk)
 $(shell rm -f $(OUT)/system/priv-app/Phonesky.apk)
 $(shell rm -f $(OUT)/system/priv-app/SetupWizard.apk)
 
