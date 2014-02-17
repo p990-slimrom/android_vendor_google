@@ -15,8 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/priv-app/GooglePartnerSetup.apk:system/priv-app/GooglePartnerSetup.apk \
     vendor/google/system/priv-app/GoogleServicesFramework.apk:system/priv-app/GoogleServicesFramework.apk \
     vendor/google/system/priv-app/GoogleTTS.apk:system/priv-app/GoogleTTS.apk \
-    vendor/google/system/priv-app/Phonesky.apk:system/priv-app/Phonesky.apk \
-    vendor/google/system/priv-app/SetupWizard.apk:system/priv-app/SetupWizard.apk
+    vendor/google/system/priv-app/Phonesky.apk:system/priv-app/Phonesky.apk
 
 PRODUCT_COPY_FILES += \
     vendor/google/system/etc/preferred-apps/google.xml:system/etc/preferred-apps/google.xml \
@@ -38,6 +37,7 @@ PRODUCT_COPY_FILES += \
 #ensure removal of the deleted apps
 $(shell rm -f $(OUT)/system/priv-app/GoogleDialer.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleLatinIme.apk)
+$(shell rm -f $(OUT)/system/priv-app/SetupWizard.apk)
 $(shell rm -f $(OUT)/system/lib/libjni_unbundled_latinimegoogle.so)
     
 else
@@ -55,7 +55,6 @@ $(shell rm -f $(OUT)/system/priv-app/GooglePartnerSetup.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleServicesFramework.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleTTS.apk)
 $(shell rm -f $(OUT)/system/priv-app/Phonesky.apk)
-$(shell rm -f $(OUT)/system/priv-app/SetupWizard.apk)
 
 $(shell rm -f $(OUT)/system/etc/preferred-apps/google.xml)
 $(shell rm -f $(OUT)/system/etc/permissions/com.google.android.maps.xml)
