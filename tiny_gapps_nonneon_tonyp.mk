@@ -7,7 +7,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/priv-app/GoogleBackupTransport.apk:system/priv-app/GoogleBackupTransport.apk \
     vendor/google/system/app/GoogleCalendarSyncAdapter.apk:system/app/GoogleCalendarSyncAdapter.apk \
     vendor/google/system/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
-    vendor/google/system/priv-app/GmsCore.apk:system/priv-app/GmsCore.apk \
+    vendor/google/system/priv-app/PrebuiltGmsCore.apk:system/priv-app/PrebuiltGmsCore.apk \
     vendor/google/system/priv-app/GoogleFeedback.apk:system/priv-app/GoogleFeedback.apk \
     vendor/google/system/priv-app/GoogleLoginService.apk:system/priv-app/GoogleLoginService.apk \
     vendor/google/system/priv-app/GoogleMaps.apk:system/priv-app/GoogleMaps.apk \
@@ -46,7 +46,7 @@ $(shell rm -f $(OUT)/system/app/ChromeBookmarksSyncAdapter.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleBackupTransport.apk)
 $(shell rm -f $(OUT)/system/app/GoogleCalendarSyncAdapter.apk)
 $(shell rm -f $(OUT)/system/app/GoogleContactsSyncAdapter.apk)
-$(shell rm -f $(OUT)/system/priv-app/GmsCore.apk)
+$(shell rm -f $(OUT)/system/priv-app/PrebuiltGmsCore.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleFeedback.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleLoginService.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleMaps.apk)
