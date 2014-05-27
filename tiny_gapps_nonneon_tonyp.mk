@@ -10,7 +10,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/priv-app/PrebuiltGmsCore.apk:system/priv-app/PrebuiltGmsCore.apk \
     vendor/google/system/priv-app/GoogleFeedback.apk:system/priv-app/GoogleFeedback.apk \
     vendor/google/system/priv-app/GoogleLoginService.apk:system/priv-app/GoogleLoginService.apk \
-    vendor/google/system/priv-app/GoogleMaps.apk:system/priv-app/GoogleMaps.apk \
     vendor/google/system/priv-app/GoogleOneTimeInitializer.apk:system/priv-app/GoogleOneTimeInitializer.apk \
     vendor/google/system/priv-app/GooglePartnerSetup.apk:system/priv-app/GooglePartnerSetup.apk \
     vendor/google/system/priv-app/GoogleServicesFramework.apk:system/priv-app/GoogleServicesFramework.apk \
@@ -49,7 +48,6 @@ $(shell rm -f $(OUT)/system/app/GoogleContactsSyncAdapter.apk)
 $(shell rm -f $(OUT)/system/priv-app/PrebuiltGmsCore.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleFeedback.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleLoginService.apk)
-$(shell rm -f $(OUT)/system/priv-app/GoogleMaps.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleOneTimeInitializer.apk)
 $(shell rm -f $(OUT)/system/priv-app/GooglePartnerSetup.apk)
 $(shell rm -f $(OUT)/system/priv-app/GoogleServicesFramework.apk)
