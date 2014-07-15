@@ -72,7 +72,15 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/lib/libwebp_android.so:system/lib/libwebp_android.so \
     vendor/google/system/lib/libwebrtc_audio_coding.so:system/lib/libwebrtc_audio_coding.so \
     vendor/google/system/lib/libwebrtc_audio_preprocessing.so:system/lib/libwebrtc_audio_preprocessing.so \
-    vendor/google/system/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so
+    vendor/google/system/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
+    vendor/google/system/lib/libgcam.so:system/lib/libgcam.so \
+    vendor/google/system/lib/libgcam_swig_jni.so:system/lib/libgcam_swig_jni.so \
+    vendor/google/system/lib/libjni_eglfence.so:system/lib/libjni_eglfence.so \
+    vendor/google/system/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
+    vendor/google/system/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so \
+    vendor/google/system/lib/liblightcycle.so:system/lib/liblightcycle.so \
+    vendor/google/system/lib/libnativehelper_compat.so:system/lib/libnativehelper_compat.so
+
 
 #ensure removal of the deleted apps
 $(shell rm -f $(OUT)/system/priv-app/GoogleDialer.apk)
