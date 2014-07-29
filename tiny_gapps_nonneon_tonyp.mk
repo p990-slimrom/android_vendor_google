@@ -11,7 +11,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/priv-app/GoogleOneTimeInitializer.apk:system/priv-app/GoogleOneTimeInitializer.apk \
     vendor/google/system/priv-app/GooglePartnerSetup.apk:system/priv-app/GooglePartnerSetup.apk \
     vendor/google/system/priv-app/GoogleServicesFramework.apk:system/priv-app/GoogleServicesFramework.apk \
-    vendor/google/system/priv-app/GoogleTTS.apk:system/priv-app/GoogleTTS.apk \
     vendor/google/system/priv-app/Phonesky.apk:system/priv-app/Phonesky.apk \
     vendor/google/system/priv-app/PrebuiltGmsCore.apk:system/priv-app/PrebuiltGmsCore.apk \
     vendor/google/system/priv-app/SetupWizard.apk:system/priv-app/SetupWizard.apk
