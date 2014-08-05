@@ -5,6 +5,7 @@ ifeq ($(MINI_GAPPS),true)
  # install
 PRODUCT_COPY_FILES += \
     vendor/google/system/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
+    vendor/google/system/app/GoogleCamera.apk:system/app/GoogleCamera.apk \
     vendor/google/system/priv-app/GoogleBackupTransport.apk:system/priv-app/GoogleBackupTransport.apk \
     vendor/google/system/priv-app/GoogleFeedback.apk:system/priv-app/GoogleFeedback.apk \
     vendor/google/system/priv-app/GoogleLoginService.apk:system/priv-app/GoogleLoginService.apk \
@@ -40,7 +41,17 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/lib/libgmscore.so:system/lib/libgmscore.so \
     vendor/google/system/lib/libjgcastservice.so:system/lib/libjgcastservice.so \
     vendor/google/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
-    vendor/google/system/lib/libocrclient.so:system/lib/libocrclient.so
-
+    vendor/google/system/lib/libocrclient.so:system/lib/libocrclient.so \
+    vendor/google/system/lib/libRSSupport.so:system/lib/libRSSupport.so \
+    vendor/google/system/lib/libgcam.so:system/lib/libgcam.so \
+    vendor/google/system/lib/libgcam_swig_jni.so:system/lib/libgcam_swig_jni.so \
+    vendor/google/system/lib/libjni_tinyplanet.so:system/lib/libjni_tinyplanet.so \
+    vendor/google/system/lib/libjpeg.so:system/lib/libjpeg.so \
+    vendor/google/system/lib/liblightcycle.so:system/lib/liblightcycle.so \
+    vendor/google/system/lib/libnativehelper_compat_libc++.so:system/lib/libnativehelper_compat_libc++.so \
+    vendor/google/system/lib/librefocus.so:system/lib/librefocus.so \
+    vendor/google/system/lib/librs.layered_filter_f32.so:system/lib/librs.layered_filter_f32.so \
+    vendor/google/system/lib/librs.layered_filter_fast_f32.so:system/lib/librs.layered_filter_fast_f32.so \
+    vendor/google/system/lib/librsjni.so:system/lib/librsjni.so
 
 endif
