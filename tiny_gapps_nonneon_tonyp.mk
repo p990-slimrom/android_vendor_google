@@ -4,10 +4,12 @@ ifeq ($(MINI_GAPPS),true)
 
  # install
 PRODUCT_COPY_FILES += \
+    vendor/google/system/app/CalendarGoogle.apk:system/app/CalendarGoogle.apk \
     vendor/google/system/app/GalleryGoogle.apk:system/app/GalleryGoogle.apk \
     vendor/google/system/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
     vendor/google/system/app/GoogleCamera.apk:system/app/GoogleCamera.apk \
     vendor/google/system/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
+    vendor/google/system/priv-app/CalendarProvider.apk:system/priv-app/CalendarProvider.apk \
     vendor/google/system/priv-app/GoogleBackupTransport.apk:system/priv-app/GoogleBackupTransport.apk \
     vendor/google/system/priv-app/GoogleFeedback.apk:system/priv-app/GoogleFeedback.apk \
     vendor/google/system/priv-app/GoogleLoginService.apk:system/priv-app/GoogleLoginService.apk \
