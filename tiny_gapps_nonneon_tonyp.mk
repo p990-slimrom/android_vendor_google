@@ -7,6 +7,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/app/GalleryGoogle.apk:system/app/GalleryGoogle.apk \
     vendor/google/system/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
     vendor/google/system/app/GoogleCamera.apk:system/app/GoogleCamera.apk \
+    vendor/google/system/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
     vendor/google/system/priv-app/GoogleBackupTransport.apk:system/priv-app/GoogleBackupTransport.apk \
     vendor/google/system/priv-app/GoogleFeedback.apk:system/priv-app/GoogleFeedback.apk \
     vendor/google/system/priv-app/GoogleLoginService.apk:system/priv-app/GoogleLoginService.apk \
@@ -42,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/lib/libgmscore.so:system/lib/libgmscore.so \
     vendor/google/system/lib/libjgcastservice.so:system/lib/libjgcastservice.so \
     vendor/google/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
+    vendor/google/system/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so \
     vendor/google/system/lib/libocrclient.so:system/lib/libocrclient.so \
     vendor/google/system/lib/libRSSupport.so:system/lib/libRSSupport.so \
     vendor/google/system/lib/libgcam.so:system/lib/libgcam.so \
