@@ -5,6 +5,7 @@ ifeq ($(MINI_GAPPS),true)
  # install
 PRODUCT_COPY_FILES += \
     vendor/google/system/app/CalendarGoogle.apk:system/app/CalendarGoogle.apk \
+    vendor/google/system/app/GoogleCalendarSyncAdapter.apk:system/app/GoogleCalendarSyncAdapter.apk \
     vendor/google/system/app/GalleryGoogle.apk:system/app/GalleryGoogle.apk \
     vendor/google/system/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
     vendor/google/system/app/GoogleCamera.apk:system/app/GoogleCamera.apk \
