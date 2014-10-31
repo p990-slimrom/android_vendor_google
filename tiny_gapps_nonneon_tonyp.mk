@@ -10,6 +10,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
     vendor/google/system/app/GoogleCamera.apk:system/app/GoogleCamera.apk \
     vendor/google/system/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
+    vendor/google/system/app/ChromeBookmarksSyncAdapter.apk:system/app/ChromeBookmarksSyncAdapter.apk \
     vendor/google/system/priv-app/CalendarProvider.apk:system/priv-app/CalendarProvider.apk \
     vendor/google/system/priv-app/GoogleBackupTransport.apk:system/priv-app/GoogleBackupTransport.apk \
     vendor/google/system/priv-app/GoogleFeedback.apk:system/priv-app/GoogleFeedback.apk \
