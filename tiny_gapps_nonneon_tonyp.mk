@@ -61,7 +61,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/system/lib/librs.layered_filter_fast_f32.so:system/lib/librs.layered_filter_fast_f32.so \
     vendor/google/system/lib/librsjni.so:system/lib/librsjni.so \
     vendor/google/system/lib/libWhisper.so:system/lib/libWhisper.so \
-    vendor/google/system/lib/libgms-ocrclient.so:system/lib/libgms-ocrclient.so
+    vendor/google/system/lib/libgms-ocrclient.so:system/lib/libgms-ocrclient.so \
+    vendor/google/system/lib/libjni_jpegutil.so:system/lib/libjni_jpegutil.so
 
 
 endif
